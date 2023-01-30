@@ -1,5 +1,5 @@
 
-
+// Describe and it --> es una funcion que sirve para llamar a otra 
 
 describe('template spec', () => {  
   it('passes', () => {
