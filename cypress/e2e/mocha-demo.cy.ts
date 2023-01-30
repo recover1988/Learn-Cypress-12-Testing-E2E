@@ -37,7 +37,12 @@ describe('Pruebas en Before and After', () => {
     it('Testcase #2', () => {
         cy.log('Hello World');
     });
-    it('Testcase #3', () => {
+    // se puede pasar de un test y pasar al siguiente con skip
+    // se puede elegir ejecutar solo 1 test con la palabra only despues de it -> it.only() y se ejecutara solo ese test
+    it.skip('Testcase #3', () => {
+        cy.log('Hello World');
+    });
+    it('Testcase #4', () => {
         cy.log('Hello World');
     });
 })
