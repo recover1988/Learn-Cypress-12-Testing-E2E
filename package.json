@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "beggin of the Ceypress+12 Course Udemy",
   "main": "index.js",
-  "scripts": {
+  "scripts": { 
     "runner": "cypress open --e2e --browser chrome"
   },
   "keywords": [
