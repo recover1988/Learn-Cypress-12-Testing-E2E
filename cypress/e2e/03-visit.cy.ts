@@ -9,7 +9,14 @@ describe('basics', () => {
     // algunos metodos son yell solo llamar y obtiene un valor que luego puede ser usado mediante  .then() como en las promesas
     it('visit classattr', () => {
         cy.url().then((url) => {
-            cy.log(`Printing the URL ${url}`)
+            cy.log(`Printing the URL ${url}`);
+            expect(url).to.contains('/textinput')
+        })
+    });
+    it('title validation',()=>{
+        cy.title().then((title)=>{
+            cy.log('title'); // muestra en consola el texto que se escriba
+            expect(title).to.be.equal('Text Input') // assertion --> si el texto que se encutra dentro de la etiqueta title es igual a el string 'Text Input' 
         })
     })
 })
