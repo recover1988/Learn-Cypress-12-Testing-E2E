@@ -15,5 +15,13 @@ describe('Locators', () => {
         cy.get('div')
             .find('button')
             .should('have.text', 'Button with Dynamic ID');
-    })
+    });
+    it("Css selector using an attribute", () => {
+        cy.get('button[class="btn btn-primary"]')
+            .should('have.text', 'Button with Dynamic ID');
+    });
+    it("Css selector using a class", () => {
+        cy.get('.btn-primary')
+            .should('have.text', 'Button with Dynamic ID');
+    });
 })
