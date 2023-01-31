@@ -1,5 +1,6 @@
 // get('selector#id') || cy.title().then(()=>{})
 // cy.contains() --> seleccion el DOM element que tenga un string adentro
+// para buscar ctrl + F en la consola de google Elements podemos buscar por id -- button#ID -- o por el class -- button[class="btn btn-primary"]
 
 describe('Locators', () => {
     beforeEach(() => {
