@@ -9,4 +9,5 @@ export default defineConfig({
       // implement node event listeners here
     },
   },
+  // pageLoadTimeout:0, // se puede modificar el tiempo de espera
 });
