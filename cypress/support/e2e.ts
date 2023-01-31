@@ -20,4 +20,5 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 // Import Xpath Dependency
+require('@cypress/xpath');
 require('@cypress/xpath/src');
