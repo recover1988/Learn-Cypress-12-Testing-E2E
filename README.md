@@ -1,5 +1,12 @@
 #Cypress 12+
 En este repositorio practico las funciones de Cypress para realizar test E2E y poder aplicarlo a otros proyectos.
+```
+XPath -> to use:
+npm install -D @cypress/xpath
+.\cypress\support\commands.ts -> /// <reference types="@cypress/xpath" />
+.\cypress\support\e2e.ts -> require('@cypress/xpath/src');
+
+```
 
 
 ## cypress-course
