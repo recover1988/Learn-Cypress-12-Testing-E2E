@@ -13,14 +13,15 @@ describe('basics', () => {
             expect(url).to.contains('/textinput')
         })
     });
-    it('title validation',()=>{
-        cy.title().then((title)=>{
+    it('title validation', () => {
+        cy.title().then((title) => {
             cy.log('title'); // muestra en consola el texto que se escriba
             expect(title).to.be.equal('Text Input') // assertion --> si el texto que se encutra dentro de la etiqueta title es igual a el string 'Text Input' 
         })
     })
-    it('Input Challengue',()=>{
+    it('Input Challengue', () => {
         // con el get() se puede pasar el elemento y el id para seleccionar el elemento
-        cy.get('input#newButtonName').type('Hello from input');
+        cy.get('input#newButtonName').type('Hello from input'); // encutra el objeto y le pasa un string
+        cy.get('button#updatingButton').click().should('have.text', 'Hello from input'); // encuentra el button por el id y hace click
     })
 })
