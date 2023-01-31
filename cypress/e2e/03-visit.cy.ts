@@ -19,4 +19,7 @@ describe('basics', () => {
             expect(title).to.be.equal('Text Input') // assertion --> si el texto que se encutra dentro de la etiqueta title es igual a el string 'Text Input' 
         })
     })
+    it('Input Challengue',()=>{
+        cy.get('input#newButtonName');
+    })
 })
