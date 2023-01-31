@@ -10,5 +10,8 @@ describe('Locators', () => {
     });
     it('Find by class (middle and spaces)', () => {
         cy.xpath(`//button[contains(concat(' ',@class,' '),'btn-warning')]`).should('have.css', 'background-color', 'rgb(255, 193, 7)')
+    });
+    it('Find by class (middle and spaces) 2',()=>{
+        cy.get('.btn-warning').should('have.css', 'background-color', 'rgb(255, 193, 7)')
     })
 })
