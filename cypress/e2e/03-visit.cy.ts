@@ -20,6 +20,7 @@ describe('basics', () => {
         })
     })
     it('Input Challengue',()=>{
-        cy.get('input#newButtonName');
+        // con el get() se puede pasar el elemento y el id para seleccionar el elemento
+        cy.get('input#newButtonName').type('Hello from input');
     })
 })
