@@ -14,9 +14,9 @@ export default defineConfig({
       theInternet: 'https://the-internet.herokuapp.com/',
       Angular: 'https://www.globalsqa.com'
     },
-    pageLoadTimeout: 60000,
-    viewportHeight: 1000,
-    viewportWidth: 1400,
+    // pageLoadTimeout: 60000,
+    // viewportHeight: 1000,
+    // viewportWidth: 1400,
   },
   // pageLoadTimeout:0, // se puede modificar el tiempo de espera
 });
