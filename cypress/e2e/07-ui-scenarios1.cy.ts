@@ -31,7 +31,19 @@ describe('Dynamic table challenge', () => {
     it('Chrome CPU Test', () => {
         cy.get(`div[role="row"] span`).each(($cell) => {
             if ($cell.text().includes('Chrome')) {
-                cy.log(`I have found the ${$cell.text()} row.`)
+                cy.log(`I have found the ${$cell.text()} row.`);
+                let chromeRowValue:string[] = [];
+                chromeRowValue.push($cell.next().text())
+                chromeRowValue.push($cell.next().next().text())
+                chromeRowValue.push($cell.next().next().next().text())
+                chromeRowValue.push($cell.next().next().next().next().text())
+                cy.log('Chrome row values', chromeRowValue);
+                chromeRowValue.forEach((chromeValue)=>{
+                    if(chromeValue.includes('%')){
+                        cy.log(chromeValue);
+                        cy.get('.bg-war')
+                    }
+                })
             }
         })
     });
