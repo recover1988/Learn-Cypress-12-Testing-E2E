@@ -23,3 +23,4 @@ import './commands'
 require('@cypress/xpath');
 require('@cypress/xpath/src');
 import "cypress-real-events";
+import './exceptions'
