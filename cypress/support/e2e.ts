@@ -22,3 +22,4 @@ import './commands'
 // Import Xpath Dependency
 require('@cypress/xpath');
 require('@cypress/xpath/src');
+import "cypress-real-events";
