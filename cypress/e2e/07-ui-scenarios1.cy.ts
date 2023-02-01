@@ -20,5 +20,19 @@ describe('Hover challenge', () => {
     });
     it('hover with real hover elements', () => {
         cy.get('.text-primary').realHover();
-    })
+    });
+})
+
+
+describe('Dynamic table challenge', () => {
+    beforeEach(() => {
+        cy.visit('/dynamictable');
+    });
+    it('Chrome CPU Test', () => {
+        cy.get(`div[role="row"] span`).each(($cell) => {
+            if ($cell.text().includes('Chrome')) {
+                cy.log(`I have found the ${$cell.text()} row.`)
+            }
+        })
+    });
 })
