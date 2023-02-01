@@ -41,7 +41,7 @@ describe('Dynamic table challenge', () => {
                 chromeRowValue.forEach((chromeValue)=>{
                     if(chromeValue.includes('%')){
                         cy.log(chromeValue);
-                        cy.get('.bg-war')
+                        cy.get('.bg-warning').should('have.text', `Chrome CPU: ${chromeValue}`)
                     }
                 })
             }
