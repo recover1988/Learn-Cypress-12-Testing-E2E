@@ -32,7 +32,12 @@ export default defineConfig({
       embeddedScreenshots: true,
       inlineAssets: true,
       saveAllAttempts: false,
-    }
+    },
+    //intentos para realizar login
+    retries: {
+      runMode: 2,
+      openMode: 1,
+    },
   },
   // pageLoadTimeout:0, // se puede modificar el tiempo de espera
 });
