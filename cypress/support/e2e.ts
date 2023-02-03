@@ -24,6 +24,7 @@ require('@cypress/xpath');
 require('@cypress/xpath/src');
 import "cypress-real-events";
 import './exceptions';
+import 'cypress-mochawesome-reporter/register';
 require('cy-verify-downloads').addCustomCommand();
 // beforeEach(() => {
 //   //   cy.log("Hello I am a GLOBAL Before Each Hook")

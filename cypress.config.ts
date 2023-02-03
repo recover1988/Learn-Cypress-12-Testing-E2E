@@ -25,6 +25,14 @@ export default defineConfig({
     // pageLoadTimeout: 60000,
     // viewportHeight: 1000,
     // viewportWidth: 1400,
+    reporter: 'cypress-mochawesome-reporter',
+    reporterOptions: {
+      charts: true,
+      reportPageTitle: 'Udemy Course Report',
+      embeddedScreenshots: true,
+      inlineAssets: true,
+      saveAllAttempts: false,
+    }
   },
   // pageLoadTimeout:0, // se puede modificar el tiempo de espera
 });
