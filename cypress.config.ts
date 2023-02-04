@@ -1,6 +1,11 @@
+// declare var require: any
 import { defineConfig } from "cypress";
+//Verify download import
 const { verifyDownloadTasks } = require('cy-verify-downloads');
-
+//Excel requirements
+const xlsx = require("node-xlsx").default;
+const fs = require("fs"); // for file
+const path = require("path"); // for file path
 export default defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
