@@ -44,6 +44,7 @@ export default defineConfig({
       //---------------------
       //Faker
       on("task", {
+        // crea un nuevo usuario con faker
         freshUser() {
           let user = {
             username: faker.name.firstName(),
